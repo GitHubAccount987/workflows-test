@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Downloading repository
+        uses: actions/checkout@v4
+        
+      - name: Setting up NodeJS
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node /server/index.js
+
+      - name: Running NodeJS
+        run: node /server/index.js
