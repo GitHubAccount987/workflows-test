@@ -17,7 +17,6 @@ jobs:
 
       - name: Debug
         run: |
-          cat /server/index.js
           ls -la /
       
       - name: Running NodeJS
