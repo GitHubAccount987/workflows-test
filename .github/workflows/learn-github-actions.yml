@@ -14,10 +14,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Debug
-        run: |
-          find /home/runner/work/workflows-test/workflows-test -name "index.js"
       
       - name: Running NodeJS
-        run: node /server/index.js
+        run: node /home/runner/work/workflows-test/workflows-test/server/index.js
