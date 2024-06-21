@@ -17,7 +17,7 @@ jobs:
 
       - name: Debug
         run: |
-          ls -la /
+          ls -Rla /home
       
       - name: Running NodeJS
         run: node /server/index.js
