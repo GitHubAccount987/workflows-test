@@ -15,5 +15,10 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Debug
+        run: |
+          cat /server/index.js
+          ls -la /
+      
       - name: Running NodeJS
         run: node /server/index.js
